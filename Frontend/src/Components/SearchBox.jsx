@@ -11,7 +11,7 @@ function SearchBox({ onSearch }) {
     };
 
     return (
-        <div className=' w-[30rem] flex justify-center'>
+        <div className=' lg:w-[30rem] w-full text-sm lg:text-base flex justify-center'>
             <input
                 type='text'
                 value={searchValue}

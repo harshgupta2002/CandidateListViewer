@@ -64,15 +64,15 @@ function Home() {
 
     return (
         <div className='w-full h-full flex justify-center items-center'>
-            <div className=' flex items-center flex-col p-4 backdrop-blur-sm bg-opacity-30 rounded-xl h-[90%] w-[80%] bg-white z-10'>
+            <div className=' flex items-center flex-col p-4 backdrop-blur-sm bg-opacity-30 rounded-xl h-[90%] w-[90%] lg:w-[80%] bg-white z-10'>
                 <h1 className='text-center text-[#383780] p-2 text-2xl pt-6 font-bold'>Candidate List Viewer</h1>
 
-                <div className='mt-4 w-[80%] flex flex-col justify-center items-center'>
-                    <div className='w-full justify-center flex gap-3'>
+                <div className='mt-4 w-full lg:w-[80%] flex flex-col overflow-hidden justify-center items-center'>
+                    <div className='w-full justify-center items-center lg:items-start flex flex-col lg:flex-row gap-3'>
                         <SearchBox
                             onSearch={handleSearch}
                         />
-                        <button onClick={handleSortByExperience} className='p-2 bg-gray-100 px-6 rounded-md shadow-sm hover:bg-gray-200'>Sort by Experience</button>
+                        <button onClick={handleSortByExperience} className='p-2 text-sm lg:text-base w-[9rem] lg:w-auto bg-gray-100 lg:px-6 rounded-md shadow-sm hover:bg-gray-200'>Sort by Experience</button>
 
                     </div>
                     <InfoTable
